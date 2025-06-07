@@ -17,7 +17,7 @@ jobs:
         dotnet-version: 8.0.x
 
     - name: Publish Blazor WASM
-      run: dotnet publish RushiMashruSolutions.csproj -c Release -o release
+      run: dotnet publish RushiMashruSolutions/RushiMashruSolutions.csproj -c Release -o release
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3

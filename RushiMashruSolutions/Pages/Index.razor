@@ -1,110 +1,76 @@
 ﻿@page "/"
 
 <!-- Hero Section -->
-<section class="animate__animated animate__fadeInUp animate__delay-1s">
-    <h1 class="display-4 fw-bold">Rushi Mashru Solutions</h1>
-    <p class="lead">Freelance IT Architect helping businesses scale with .NET, Cloud & DevOps solutions.</p>
+<section id="hero" class="text-center my-5 animate-on-scroll">
+    <h1 class="display-4 fw-bold">Your Technology Solution Partner</h1>
+    <p class="lead">Helping businesses scale with .NET, cloud, DevOps, and modern architecture.</p>
     <div class="mt-4">
-        <a href="contact" class="btn btn-success btn-lg me-2">
-            <i class="fab fa-whatsapp"></i> WhatsApp Me
-        </a>
-        <a href="resume.pdf" download class="btn btn-outline-primary btn-lg">
-            <i class="fa-solid fa-download"></i> Download Resume
-        </a>
+        <a href="#contact" class="btn btn-success btn-lg me-2"><i class="fab fa-whatsapp"></i> WhatsApp Me</a>
+        <a href="resume.pdf" download class="btn btn-outline-primary btn-lg"><i class="fa-solid fa-download"></i> Resume</a>
     </div>
 </section>
 
-
 <hr />
 
-<!-- About Overview -->
-<section class="animate__animated animate__fadeInUp animate__delay-1s">
-    <h2 class="fw-semibold">Who Am I?</h2>
-    <p class="mt-3">
-        I’m <strong>Rushi Mashru</strong>, a Senior Solution Engineer with over 10 years of experience delivering robust, enterprise-grade solutions.
-        I specialize in:
-    </p>
-    <ul class="list-unstyled">
-        <li>✔ Scalable .NET Architectures</li>
-        <li>✔ Cloud Deployments (Azure & AWS)</li>
-        <li>✔ DevOps & Automation</li>
-        <li>✔ System Integrations & Microservices</li>
-    </ul>
-    <a href="about" class="btn btn-outline-primary mt-2">
-        <i class="fa-solid fa-user-tie"></i> Learn More
-    </a>
+<!-- About -->
+<section id="about" class="animate-on-scroll my-5">
+    <h2 class="fw-semibold text-center">About Rushi</h2>
+    <p class="text-center">Senior Solution Engineer with 10+ years of experience in .NET, Azure, DevOps & enterprise software systems.</p>
+    <div class="text-center">
+        <button class="btn btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#aboutMore">
+            Read More
+        </button>
+        <div id="aboutMore" class="collapse mt-3">
+            <p>I specialize in architecting scalable systems, building cloud-native services, and creating CI/CD pipelines for fast and reliable delivery. I’ve consulted for startups, SMBs, and enterprises across finance, healthcare, and retail industries.</p>
+        </div>
+    </div>
 </section>
 
 <hr />
 
-<!-- Services Overview -->
-<section class="animate__animated animate__fadeInUp animate__delay-1s">
-    <h2 class="text-center fw-semibold mb-4">Core Services</h2>
-    <div class="row text-center g-4">
+<!-- Services -->
+<section id="services" class="animate-on-scroll my-5">
+    <h2 class="fw-semibold text-center">Services</h2>
+    <div class="row g-4 mt-3">
         <div class="col-md-4">
-            <div class="border p-4 rounded h-100 shadow-sm">
-                <i class="fa-solid fa-cloud text-primary fa-2x mb-3"></i>
+            <div class="p-4 border rounded shadow-sm h-100">
+                <i class="fa-solid fa-cloud text-primary fa-2x mb-2"></i>
                 <h5>Cloud Architecture</h5>
-                <p>Azure/AWS architecture planning, deployment, and monitoring for modern businesses.</p>
+                <p>Design and deploy secure and scalable systems on Azure and AWS.</p>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="border p-4 rounded h-100 shadow-sm">
-                <i class="fa-solid fa-code text-primary fa-2x mb-3"></i>
-                <h5>Backend API Development</h5>
-                <p>RESTful APIs and clean architectures using .NET 8, C#, and Entity Framework Core.</p>
+            <div class="p-4 border rounded shadow-sm h-100">
+                <i class="fa-solid fa-code text-primary fa-2x mb-2"></i>
+                <h5>.NET Backend Systems</h5>
+                <p>REST APIs, EF Core, CQRS, Microservices, and robust system design.</p>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="border p-4 rounded h-100 shadow-sm">
-                <i class="fa-solid fa-gears text-primary fa-2x mb-3"></i>
-                <h5>DevOps & Automation</h5>
-                <p>CI/CD pipelines, Dockerized services, and GitHub Actions for automated delivery.</p>
+            <div class="p-4 border rounded shadow-sm h-100">
+                <i class="fa-solid fa-gears text-primary fa-2x mb-2"></i>
+                <h5>DevOps & CI/CD</h5>
+                <p>Automated pipelines, GitHub Actions, Docker, and release management.</p>
             </div>
         </div>
-    </div>
-    <div class="text-center mt-4">
-        <a href="services" class="btn btn-outline-secondary">
-            <i class="fa-solid fa-layer-group"></i> View All Services
-        </a>
     </div>
 </section>
 
 <hr />
 
-<!-- Tech Stack -->
-<section class="animate-on-scroll">
-    <h2 class="fw-semibold">Technology Stack</h2>
-    <p class="text-muted">Tools & platforms I use to build future-proof systems:</p>
-    <div class="d-flex justify-content-center flex-wrap gap-4 mt-3">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" height="48" alt="dotnet" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" height="48" alt="azure" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="48" alt="docker" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="48" alt="github" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="48" alt="js" />
-    </div>
-</section>
-
-<hr />
-
-<!-- Contact Section -->
-<section class="animate-on-scroll">
-    <h2>Let’s Connect</h2>
-    <p class="mt-3">
-        Ready to discuss your project or need architectural guidance? Reach out anytime:
-    </p>
-    <div class="d-flex justify-content-center flex-column align-items-center gap-2 my-3">
+<!-- Contact -->
+<section id="contact" class="animate-on-scroll my-5 text-center">
+    <h2 class="fw-semibold">Get in Touch</h2>
+    <p class="mt-3 mb-4">Let's connect and discuss how I can help your project succeed.</p>
+    <div class="d-flex justify-content-center gap-4 flex-wrap fs-5">
         <a href="mailto:rushi@example.com" class="text-dark">
-            <i class="fa-solid fa-envelope fa-fw"></i> rushi@example.com
+            <i class="fa-solid fa-envelope"></i> rushi.p.mashru@gmail.com
         </a>
         <a href="https://wa.me/917048311993" class="text-success" target="_blank">
-            <i class="fab fa-whatsapp fa-fw"></i> +91 7048311993
+            <i class="fab fa-whatsapp"></i> +91 7048311994
         </a>
-        <a href="https://www.linkedin.com/in/your-profile" class="text-primary" target="_blank">
-            <i class="fab fa-linkedin fa-fw"></i> LinkedIn Profile
+        <a href="https://linkedin.com/in/rushimashru" class="text-primary" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
         </a>
     </div>
-    <a href="contact" class="btn btn-primary mt-3">
-        <i class="fa-solid fa-paper-plane"></i> Go to Contact Page
-    </a>
 </section>

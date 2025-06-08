@@ -22,10 +22,24 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
         }
 
-        footer a {
+        a {
             text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+        .navbar-brand {
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        section {
+            scroll-margin-top: 100px;
         }
     </style>
 
@@ -43,7 +57,6 @@
                     }
                 });
             }, { threshold: 0.1 });
-
             document.querySelectorAll('.animate-on-scroll').forEach(el => {
                 el.classList.add('animate__animated');
                 observer.observe(el);

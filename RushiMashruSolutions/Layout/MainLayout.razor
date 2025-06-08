@@ -1,25 +1,23 @@
 ﻿@inherits LayoutComponentBase
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top border-bottom">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="home">Rushi Mashru Solutions</a>
+        <a class="navbar-brand text-primary fs-4" href="#">Rushi Mashru Solutions</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><NavLink class="nav-link" href="">Home</NavLink></li>
-                <li class="nav-item"><NavLink class="nav-link" href="services">Services</NavLink></li>
-                <li class="nav-item"><NavLink class="nav-link" href="about">About Us</NavLink></li>
-                <li class="nav-item"><NavLink class="nav-link" href="contact">Contact</NavLink></li>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
-<!-- Main content -->
-<main class="container py-5">
+<main class="container py-4">
     @Body
 </main>
 
@@ -41,4 +39,3 @@
         <small class="text-muted">© 2025 RushiMashru. All rights reserved.</small>
     </div>
 </footer>
-

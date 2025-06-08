@@ -60,7 +60,7 @@
     </div>
 </section> *@
 <section id="services" class="my-5">
-    <h2 class="text-center">Services</h2>
+    <h2 class="fw-semibold text-center">Services</h2>
     <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
         <div class="col">
             <div class="card p-4 text-center">
@@ -68,6 +68,16 @@
                 <h5>Azure Architecture</h5>
                 <p>Design robust cloud-native systems using Azure AD, B2C, Functions, KeyVault, CI/CD.</p>
                 <button class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#svcAzureMore">
+                    <i class="fa-solid fa-circle-plus"></i> Read More
+                </button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card p-4 text-center">
+                <i class="fa-solid fa-brain text-primary fa-2x mb-3"></i>
+                <h5>AI / ML / Bots</h5>
+                <p>End-to-end machine learning apps and automation using ML.NET, Python, OCR, and OpenCV.</p>
+                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#svcMlMore">
                     <i class="fa-solid fa-circle-plus"></i> Read More
                 </button>
             </div>
@@ -97,6 +107,33 @@
             </div>
             <div class="col text-center">
                 <button class="btn btn-sm btn-outline-danger mt-3" data-bs-toggle="collapse" data-bs-target="#svcAzureMore">
+                    <i class="fa-solid fa-circle-minus"></i> Read Less
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="svcMlMore" class="collapse mt-4">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card p-3 shadow-sm">
+                    <h6><i class="fa-solid fa-eye text-primary"></i> OCR & Computer Vision</h6>
+                    <p>Invoice OCR, ID card parsing, image feature detection, real-time visual alerts.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-3 shadow-sm">
+                    <h6><i class="fa-solid fa-comments text-primary"></i> Chatbots & NLP</h6>
+                    <p>Customer service bots, smart FAQ engines, and dialog models with Python + APIs.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-3 shadow-sm">
+                    <h6><i class="fa-solid fa-chart-line text-primary"></i> Predictive Models</h6>
+                    <p>Fraud detection, customer churn models, forecasting with ML.NET and scikit-learn.</p>
+                </div>
+            </div>
+            <div class="col text-center">
+                <button class="btn btn-sm btn-outline-danger mt-3" data-bs-toggle="collapse" data-bs-target="#svcMlMore">
                     <i class="fa-solid fa-circle-minus"></i> Read Less
                 </button>
             </div>

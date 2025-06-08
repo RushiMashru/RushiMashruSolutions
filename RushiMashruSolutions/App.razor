@@ -1,4 +1,6 @@
-﻿<Router AppAssembly="@typeof(App).Assembly">
+﻿@using Microsoft.JSInterop
+
+<Router AppAssembly="@typeof(App).Assembly">
     <Found Context="routeData">
         <RouteView RouteData="@routeData" DefaultLayout="typeof(MainLayout)" />
     </Found>
@@ -8,3 +10,22 @@
         </LayoutView>
     </NotFound>
 </Router>
+
+@code {
+    [Inject] private IJSRuntime JS { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var path = await JS.InvokeAsync<string>("sessionStorage.getItem", "redirectPath");
+            if (!string.IsNullOrEmpty(path))
+            {
+                await JS.InvokeVoidAsync("sessionStorage.removeItem", "redirectPath");
+                var uri = new Uri(path, UriKind.RelativeOrAbsolute);
+                var navManager = (NavigationManager)JS.GetType().GetProperty("NavigationManager", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance).GetValue(JS);
+                navManager.NavigateTo(uri.ToString(), forceLoad: false);
+            }
+        }
+    }
+}

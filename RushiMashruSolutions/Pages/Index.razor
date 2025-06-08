@@ -1,34 +1,12 @@
 ﻿@page "/"
 
 <!-- Hero Section -->
-<section id="hero" class="container text-center my-5 animate-on-scroll">
-    <h1 class="display-4 fw-bold">Your Technology Solution Partner</h1>
-    <p class="lead">Helping businesses scale with .NET, cloud, DevOps, and modern architecture.</p>
-    <div class="d-flex flex-column flex-md-row justify-content-center gap-3 mt-4">
-        <a href="#contact" class="btn btn-success btn-lg">
-            <i class="fab fa-whatsapp"></i> WhatsApp Me
-        </a>
-        <a href="resume.pdf" download class="btn btn-outline-primary btn-lg">
-            <i class="fa-solid fa-download"></i> Download Resume
-        </a>
-    </div>
-</section>
+<HeroComponent />
 
 <hr />
 
 <!-- About -->
-<section id="about" class="container animate-on-scroll my-5">
-    <h2 class="fw-semibold text-center">About Rushi</h2>
-    <p class="text-center">Senior Solution Engineer with 10+ years of experience in .NET, Azure, DevOps & enterprise software systems.</p>
-    <div class="text-center">
-        <button class="btn btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#aboutMore">
-            Read More
-        </button>
-        <div id="aboutMore" class="collapse mt-3">
-            <p>I specialize in architecting scalable systems, building cloud-native services, and creating CI/CD pipelines for fast and reliable delivery. I’ve consulted for startups, SMBs, and enterprises across finance, healthcare, and retail industries.</p>
-        </div>
-    </div>
-</section>
+<AboutComponents />
 
 <hr />
 
@@ -38,18 +16,4 @@
 <hr />
 
 <!-- Contact -->
-<section id="contact" class="container animate-on-scroll my-5 text-center">
-    <h2 class="fw-semibold">Get in Touch</h2>
-    <p class="mt-3 mb-4">Let's connect and discuss how I can help your project succeed.</p>
-    <div class="d-flex flex-wrap justify-content-center gap-3 text-center fs-5 mt-3">
-        <a href="mailto:rushi@example.com" class="text-dark">
-            <i class="fa-solid fa-envelope"></i> rushi.p.mashru@gmail.com
-        </a>
-        <a href="https://wa.me/917048311993" class="text-success" target="_blank">
-            <i class="fab fa-whatsapp"></i> +91 7048311994
-        </a>
-        <a href="https://linkedin.com/in/rushimashru" class="text-primary" target="_blank">
-            <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
-    </div>
-</section>
+<ContactComponent />

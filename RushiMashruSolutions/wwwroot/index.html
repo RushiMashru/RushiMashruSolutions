@@ -41,12 +41,57 @@
         section {
             scroll-margin-top: 100px;
         }
+
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            z-index: 9999;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        #backToTop {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            display: none;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            font-size: 20px;
+            z-index: 9998;
+        }
     </style>
 
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100" tabindex="0">
     <div id="app">Loading...</div>
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/917048311993" class="floating-whatsapp" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
     <script src="_framework/blazor.webassembly.js"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            document.getElementById('backToTop').style.display =
+                window.scrollY > 200 ? 'block' : 'none';
+        });
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const observer = new IntersectionObserver(entries => {

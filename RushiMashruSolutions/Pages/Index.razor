@@ -1,41 +1,110 @@
 ﻿@page "/"
 
 <!-- Hero Section -->
-<section class="text-center mb-5">
-    <h1 class="display-4">Your Freelance IT Architecture Partner</h1>
-    <p class="lead">Building scalable, secure, and cloud-ready solutions using .NET, Azure, and modern stacks.</p>
-    <a href="contact" class="btn btn-success btn-lg">Let’s Connect on WhatsApp</a>
+<section class="animate__animated animate__fadeInUp animate__delay-1s">
+    <h1 class="display-4 fw-bold">Rushi Mashru Solutions</h1>
+    <p class="lead">Freelance IT Architect helping businesses scale with .NET, Cloud & DevOps solutions.</p>
+    <div class="mt-4">
+        <a href="contact" class="btn btn-success btn-lg me-2">
+            <i class="fab fa-whatsapp"></i> WhatsApp Me
+        </a>
+        <a href="resume.pdf" download class="btn btn-outline-primary btn-lg">
+            <i class="fa-solid fa-download"></i> Download Resume
+        </a>
+    </div>
+</section>
+
+
+<hr />
+
+<!-- About Overview -->
+<section class="animate__animated animate__fadeInUp animate__delay-1s">
+    <h2 class="fw-semibold">Who Am I?</h2>
+    <p class="mt-3">
+        I’m <strong>Rushi Mashru</strong>, a Senior Solution Engineer with over 10 years of experience delivering robust, enterprise-grade solutions.
+        I specialize in:
+    </p>
+    <ul class="list-unstyled">
+        <li>✔ Scalable .NET Architectures</li>
+        <li>✔ Cloud Deployments (Azure & AWS)</li>
+        <li>✔ DevOps & Automation</li>
+        <li>✔ System Integrations & Microservices</li>
+    </ul>
+    <a href="about" class="btn btn-outline-primary mt-2">
+        <i class="fa-solid fa-user-tie"></i> Learn More
+    </a>
 </section>
 
 <hr />
 
 <!-- Services Overview -->
-<section class="mb-5">
-    <h2>Our Services</h2>
-    <ul>
-        <li>Cloud Architecture (Azure, AWS)</li>
-        <li>Microservices & API Development</li>
-        <li>System Design & Integration</li>
-    </ul>
-    <a class="btn btn-outline-primary" href="services">View All Services</a>
+<section class="animate__animated animate__fadeInUp animate__delay-1s">
+    <h2 class="text-center fw-semibold mb-4">Core Services</h2>
+    <div class="row text-center g-4">
+        <div class="col-md-4">
+            <div class="border p-4 rounded h-100 shadow-sm">
+                <i class="fa-solid fa-cloud text-primary fa-2x mb-3"></i>
+                <h5>Cloud Architecture</h5>
+                <p>Azure/AWS architecture planning, deployment, and monitoring for modern businesses.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="border p-4 rounded h-100 shadow-sm">
+                <i class="fa-solid fa-code text-primary fa-2x mb-3"></i>
+                <h5>Backend API Development</h5>
+                <p>RESTful APIs and clean architectures using .NET 8, C#, and Entity Framework Core.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="border p-4 rounded h-100 shadow-sm">
+                <i class="fa-solid fa-gears text-primary fa-2x mb-3"></i>
+                <h5>DevOps & Automation</h5>
+                <p>CI/CD pipelines, Dockerized services, and GitHub Actions for automated delivery.</p>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-4">
+        <a href="services" class="btn btn-outline-secondary">
+            <i class="fa-solid fa-layer-group"></i> View All Services
+        </a>
+    </div>
 </section>
 
 <hr />
 
-<!-- About Overview -->
-<section class="mb-5">
-    <h2>About Rushi</h2>
-    <p>Senior Solution Engineer with 10+ years in .NET, Azure, enterprise systems, and cloud infrastructure. I help startups and enterprises design production-ready systems with modern patterns.</p>
-    <a class="btn btn-outline-secondary" href="about">Read More</a>
+<!-- Tech Stack -->
+<section class="animate-on-scroll">
+    <h2 class="fw-semibold">Technology Stack</h2>
+    <p class="text-muted">Tools & platforms I use to build future-proof systems:</p>
+    <div class="d-flex justify-content-center flex-wrap gap-4 mt-3">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" height="48" alt="dotnet" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" height="48" alt="azure" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="48" alt="docker" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="48" alt="github" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="48" alt="js" />
+    </div>
 </section>
 
 <hr />
 
-<!-- Contact Summary -->
-<section>
-    <h2>Contact Now</h2>
-    <p><strong>WhatsApp:</strong> +91 7048311994</p>
-    <p><strong>Email:</strong> rushi.p.mashru@gmail.com</p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rushimashru" target="_blank">your-profile</a></p>
-    <a href="contact" class="btn btn-primary">Go to Contact Page</a>
+<!-- Contact Section -->
+<section class="animate-on-scroll">
+    <h2>Let’s Connect</h2>
+    <p class="mt-3">
+        Ready to discuss your project or need architectural guidance? Reach out anytime:
+    </p>
+    <div class="d-flex justify-content-center flex-column align-items-center gap-2 my-3">
+        <a href="mailto:rushi@example.com" class="text-dark">
+            <i class="fa-solid fa-envelope fa-fw"></i> rushi@example.com
+        </a>
+        <a href="https://wa.me/917048311993" class="text-success" target="_blank">
+            <i class="fab fa-whatsapp fa-fw"></i> +91 7048311993
+        </a>
+        <a href="https://www.linkedin.com/in/your-profile" class="text-primary" target="_blank">
+            <i class="fab fa-linkedin fa-fw"></i> LinkedIn Profile
+        </a>
+    </div>
+    <a href="contact" class="btn btn-primary mt-3">
+        <i class="fa-solid fa-paper-plane"></i> Go to Contact Page
+    </a>
 </section>
